@@ -1,0 +1,121 @@
+.toolbar+.container {
+  padding-top: 70px;
+}
+
+.bg-translucent {
+  background: #fff5;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  background: grey;
+}
+
+.btn-icon {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  padding: 7px;
+  background: transparent;
+}
+
+.btn-icon:hover {
+  background: #fff5;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.input-group .btn-append {
+  border-radius: 0 .25rem .25rem 0 !important;
+}
+
+.loading .loader {
+  display: block;
+}
+
+.loader {
+  display: none;
+  border: 0.3rem solid #007bff;
+  border-top: 0.3rem solid transparent;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: spin 1.5s linear infinite;
+}
+
+div[class*="-primary"] .loader, div[class*="-secondary"] .loader, .bg-dark .loader {
+  border-color: white;
+  border-top-color: transparent;
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.form-group.is-invalid .invalid-feedback, .input-group.is-invalid~.invalid-feedback {
+  display: block;
+}
+
+.form-group.is-invalid .input-group input.form-control, 
+.form-group.is-invalid .input-group-prepend .form-control,
+.form-group.is-invalid .input-group .input-group-prepend span.input-group-text {
+  border-color: #fb6340;
+}
+
+.form-group.focused .input-group input.form-control, 
+.form-group.focused .input-group-prepend .form-control.custom-select, 
+.form-group.focused .input-group .input-group-prepend span.input-group-text {
+  border-color: #5e72e4;
+}
+
+span.input-group-text, .input-group-prepend .form-control, .form-control {
+  transition: border-color .2s ease-in-out !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(/assets/fonts/MaterialIcons-Regular.woff2) format('woff2'), url(/assets/fonts/MaterialIcons-Regular.woff) format('woff'), url(/assets/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

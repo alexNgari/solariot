@@ -1,0 +1,25 @@
+menu "Project Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "It Hurts When Ip"
+        help
+            SSID (network name) for the device to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "Mutundu@123"
+        help
+            WiFi password (WPA or WPA2) for the device to use.
+
+    config BROKER_URL
+        string "Broker URL"
+        default "m16.cloudmqtt.com"
+        help
+            URL of the broker to connect to
+
+    config BROKER_URL_FROM_STDIN
+        bool
+        default y if BROKER_URL = "FROM_STDIN"
+
+endmenu
